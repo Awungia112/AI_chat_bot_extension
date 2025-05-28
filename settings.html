@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+<body class="w-[400px] h-[520px] rounded-2xl border border-gray-300 dark:border-gray-700 overflow-hidden flex flex-col p-4 bg-white dark:bg-gray-900 text-sm">
+  <h2 class="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">API Settings</h2>
+
+  <label class="block mb-2 text-gray-700 dark:text-gray-300">API Key</label>
+  <input id="apiKey" class="w-full mb-4 p-2 border rounded-lg dark:bg-gray-800 dark:text-white dark:border-gray-600" placeholder="sk-..." />
+
+  <label class="block mb-2 text-gray-700 dark:text-gray-300">API Endpoint</label>
+  <input id="apiUrl" class="w-full mb-4 p-2 border rounded-lg dark:bg-gray-800 dark:text-white dark:border-gray-600" value="<https://api.openai.com/v1/chat/completions>" />
+
+  <div class="flex justify-between mt-auto">
+    <button onclick="window.location.href='popup.html'" class="px-4 py-2 rounded bg-gray-300 dark:bg-gray-700 text-sm dark:text-white">Back</button>
+    <button id="saveBtn" class="px-4 py-2 rounded bg-blue-600 text-white text-sm">Save</button>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

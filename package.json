@@ -1,0 +1,16 @@
+{
+  "name": "chatbot-extension",
+  "version": "1.0.0",
+  "description": "chrome extension with ai intergrated",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7"
+  }
+}
