@@ -3,7 +3,7 @@
   "name": "AI Chatbot Assistant",
   "version": "1.0",
   "description": "Client-side chatbot powered by OpenAI-compatible APIs.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "scripting", "activeTab"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -12,5 +12,12 @@
   },
   "icons": {
     "128": "icons/icon128.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
