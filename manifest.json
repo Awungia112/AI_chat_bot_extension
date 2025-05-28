@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI Chatbot Assistant",
+  "version": "1.0",
+  "description": "Client-side chatbot powered by OpenAI-compatible APIs.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  }
+}
