@@ -89,3 +89,15 @@ document.getElementById('backToChat').addEventListener('click', () => {
   document.getElementById('settingsPanel').classList.add('hidden')
   document.getElementById('chatPanel').classList.remove('hidden')
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, { action: "getPageContent" }, (response) => {
+      if (response?.content) {
+        console.log("Page content:", response.content);
+        // You can now use this as input to your chatbot
+        appendMessage("user", response.content.substring(0, 500)); // Example: first 500 chars
+      }
+    });
+  });
+});
